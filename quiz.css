@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Orbitron', sans-serif; /* Use a space-themed font */
+    color: white;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+body{
+    background-color: rgb(240, 235, 235);
+    overflow: hidden;
+}
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place it behind other content */
+    filter: brightness(0.3);
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+#choice-next, #start{
+
+
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    
+    color: white;
+    padding: 1.5vw;
+    width: 60%;
+    margin: 2vw auto;
+    font-size: 3vh;
+    border-radius: 20vw;
+    
+
+}
+
+.container{
+         background-color: rgba(0, 0, 0, 0.484); /* Semi-transparent background */
+        width:60vw;
+        height: 95vh;
+        display: flex;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-bottom: 1vw;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border: black 1px solid;
+        margin: 2vh auto;
+        text-align: center;
+        border-radius: 2vw;
+}
+
+.container:hover{
+    background-color: rgba(77, 74, 74, 0.589); /* Semi-transparent background */
+    transition: all ease-in-out 0.3s;
+}
+
+
+.container img{
+    width: 25vh;
+    height: 25vh;
+    margin-top: 2vw;
+    border-radius: 2vw;
+    border: white solid 0.5vw;
+    box-shadow: 0.7vw 0.7vw white, 1.2vw 1.2vw rgb(64, 6, 53) ;
+}
+
+
+.container h1{
+    font-size: 4.5vh;
+    border-bottom: 1px solid rgba(236, 223, 223, 0.837);
+    margin-top: 2vw;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+.container h3{
+    font-size: 4vh;
+    font-family: 'M PLUS Code Latin', sans-serif;
+}
+
+.container p{
+    font-size: 2.5vh;
+    margin-top: 2vh;
+}
+
+#instructions{
+    text-align: left;
+    width:100%;
+    margin-top: 5vh;
+}
+
+#choice-container{
+    justify-content: center;
+}
+
+.timer{
+    /* border: 1px solid black; */
+    margin: 0;
+    /*Initially hide timer  */
+    display: none;
+}
+
+span{
+    background-color: rgba(113, 109, 131, 0.489);
+    padding: 1.3vw;
+    color: white;
+    width: 35vw;
+    display: block;
+    
+}
+
+.question-container{
+    text-align: left;
+    width:100%;
+    margin-top: 5vh;;
+    margin-bottom: 1vh;
+}
+
+/* Initially hide quizzes */
+#choice-container,.timer, #tf-container, #choice-next, #identification-container,  #results-container {
+    display: none;
+}
+#choices{
+    display: block;
+    width: 100%;
+}
+
+.choice{
+    display: block;
+    width: 100%;
+    margin-top: 2vh;
+    height: 6vh;
+    font-size: 3vh;
+    padding: 1vh;
+    color: black;
+}
+
+form{
+    font-size: 3vh;
+}
+
+.container button{
+    cursor: pointer;
+}
+
+
+#identification-container{
+    width: 60%;
+}
+
+#tf-container{
+    text-align: left;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+#input{
+    color:rgb(0, 0, 0);
+    width:100%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 3vh;
+}
