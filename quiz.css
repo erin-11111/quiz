@@ -29,22 +29,20 @@ video {
 
 
 #choice-next, #start{
-
-
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-    
+    background-color: rgb(72, 70, 70);
     color: white;
     padding: 1.5vw;
     width: 60%;
     margin: 2vw auto;
     font-size: 3vh;
     border-radius: 20vw;
+    text-shadow: black 2px 2px 3px;
     
 
 }
 
 .container{
-         background-color: rgba(0, 0, 0, 0.484); /* Semi-transparent background */
+         /* background-color: rgba(0, 0, 0, 0.484);  */
         width:60vw;
         height: 95vh;
         display: flex;
@@ -58,12 +56,9 @@ video {
         margin: 2vh auto;
         text-align: center;
         border-radius: 2vw;
+        border: none;
 }
 
-.container:hover{
-    background-color: rgba(77, 74, 74, 0.589); /* Semi-transparent background */
-    transition: all ease-in-out 0.3s;
-}
 
 
 .container img{
@@ -111,11 +106,12 @@ video {
 }
 
 span{
-    background-color: rgba(113, 109, 131, 0.489);
+    background-color: rgba(18, 17, 23, 0.488);
     padding: 1.3vw;
     color: white;
     width: 35vw;
     display: block;
+    font-size: 3vh;
     
 }
 
@@ -139,7 +135,7 @@ span{
     display: block;
     width: 100%;
     margin-top: 2vh;
-    height: 6vh;
+    height: 7vh;
     font-size: 3vh;
     padding: 1vh;
     color: black;
@@ -170,4 +166,24 @@ form{
     margin-top: 2vw;
     margin-bottom: 2vw;
     font-size: 3vh;
+}
+
+
+@media(max-width:768px){
+    .video-container{
+        filter: brightness(0.1);
+    }
+}
+
+@media(min-width:769px){
+
+    .container:hover{
+        background-color: rgba(77, 74, 74, 0.589); /* Semi-transparent background */
+        transition: all ease-in-out 0.3s;
+    }
+    
+    .container:hover #start, .container:hover #choice-next{
+        background-color: rgb(0, 0, 0); /* Semi-transparent background */
+        transition: all ease-in-out 0.3s;
+    }
 }
